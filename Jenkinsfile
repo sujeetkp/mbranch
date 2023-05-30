@@ -6,6 +6,7 @@ pipeline{
     stage("test"){
       sh '''hostname'''
       echo ${env.BRANCH_NAME}
+      
     }
   }
 }
