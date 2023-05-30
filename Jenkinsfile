@@ -4,9 +4,10 @@ pipeline{
   }
   stages{
     stage("test"){
-      sh '''hostname'''
-      echo ${env.BRANCH_NAME}
-      
+      steps{
+        sh '''hostname'''
+        echo ${env.BRANCH_NAME}
+      }
     }
   }
 }
