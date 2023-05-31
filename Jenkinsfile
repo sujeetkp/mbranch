@@ -7,7 +7,7 @@ pipeline{
       steps{
         sh '''hostname'''
         echo "${env.BRANCH_NAME}"
-        echo "Added New Code !!"
+        echo "Added New Code !!!"
       }
     }
   }
